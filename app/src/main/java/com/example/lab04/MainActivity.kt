@@ -5,11 +5,14 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.SegmentedButtonDefaults.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -67,4 +70,19 @@ fun MyProgressBar() {
 @Composable
 fun PreviewProgressBar() {
     MyProgressBar()
+}
+
+@Composable
+fun MyIconControls() {
+    Row(modifier = Modifier.padding(16.dp)) {
+        Icon(Icons.Default.Favorite, contentDescription = "Favorite", tint = Color.Red)
+        Spacer(Modifier.width(10.dp))
+        Icon(Icons.Default.Share, contentDescription = "Share", tint = Color.Blue)
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun PreviewIconControls() {
+    MyIconControls()
 }
