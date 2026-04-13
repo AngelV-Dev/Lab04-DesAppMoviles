@@ -115,4 +115,4 @@ fun PreviewBottomNavigation() {
     MyBottomNavigation()
 }
 
-// Modificado por Angelo
+// Step 5: Testing merge conflict resolution between developers
