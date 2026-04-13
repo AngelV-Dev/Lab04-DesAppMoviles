@@ -86,3 +86,17 @@ fun MyIconControls() {
 fun PreviewIconControls() {
     MyIconControls()
 }
+
+@Composable
+fun MyBottomNavigation() {
+    BottomAppBar {
+        Text("Inicio", modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
+        Text("Perfil", modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun PreviewBottomNavigation() {
+    MyBottomNavigation()
+}
